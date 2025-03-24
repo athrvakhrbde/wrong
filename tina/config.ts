@@ -9,9 +9,9 @@ export default defineConfig({
     process.env.HEAD!, // Netlify branch env
   token: process.env.TINA_TOKEN!,
   build: {
-    outputFolder: "admin",
+    outputFolder: "tinacms-admin",
     publicFolder: "static",
-    basePath: "admin",
+    basePath: "tinacms-admin",
     clean: true
   },
   media: {
