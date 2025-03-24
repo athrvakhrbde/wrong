@@ -1,4 +1,31 @@
-baseURL = 'https://wrong.athrvakhrbde.com/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ananke"
+baseURL = "https://wrong.athrvakhrbde.com"
+languageCode = "en-us"
+title = "Wrong"
+
+[params]
+  description = "Personal website"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
